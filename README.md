@@ -15,7 +15,7 @@ A Handler to handle caching within Crystal's HTTP layer. Built with the [Cache S
 2. Run `shards install`
 
 ## Usage
-You can use HTTP::CacheHandler with any framework that accepts Crystal's 
+You can use HTTPCacheHandler with any framework that accepts a Crystal
 `HTTP::Handler`. See the guides for this on popular frameworks such as [Kemal](https://kemalcr.com/guide/#middleware), [Amber](https://docs.amberframework.org/amber/guides/routing/pipelines), [Lucky](https://luckyframework.org/guides/http-and-routing/http-handlers), [Orion](https://github.com/obsidian/orion#instrumenting-handlers-a-k-a-middleware),  and [Grip](https://github.com/grip-framework/grip/blob/master/DOCUMENTATION.md#middleware). See the options below for how to configure with the various strategies.
 
 ```crystal
