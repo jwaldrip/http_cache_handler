@@ -54,7 +54,7 @@ class HTTPCacheHandler
       IO.copy(io, context.response.output)
     else
       io = IO::Memory.new
-      context.response.output = IO::MultiWriter.new(context.response.output, io)
+      context.response.output = IO::MultiWriter.new(context.response.output, io, sync_close: true)
       call_next(context)
       store.write(key, io.tap(&.rewind).gets_to_end)
     end
