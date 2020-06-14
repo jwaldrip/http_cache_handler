@@ -2,7 +2,7 @@ require "http"
 require "cache"
 require "json"
 
-class HttpCacheHandler
+class HTTPCacheHandler
   include HTTP::Handler
   getter methods : Array(String)
   getter store : Cache::MemoryStore(String, String) | Cache::FileStore(String, String) | Cache::RedisStore(String, String) | Cache::MemcachedStore(String, String) | Cache::NullStore(String, String)
