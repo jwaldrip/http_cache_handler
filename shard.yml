@@ -1,0 +1,13 @@
+name: http_cache_handler
+version: 0.1.0
+
+authors:
+  - Jason Waldrip <jason@waldrip.net>
+
+crystal: ">= 0.34.0"
+
+dependencies:
+  cache:
+    github: mamantoha/cache
+
+license: MIT
